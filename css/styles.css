@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;800;900&display=swap'); */
+
+body{
+    height:100vh;
+    background-image: url(../img/agm.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Calibri', sans-serif;
+}
+.box{
+    height:99vh;
+    width:98vw;
+    margin:auto;
+    padding:0;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+    /* background-color: khaki; */
+    
+}
+.box .right, .box .left{
+    color:#ccc;
+    display: flex;
+    flex-direction: column;
+}
+.box .left .agm { 
+    display:flex;
+}
+
+.box .left .agm p{
+    margin:0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.box .left .mail, .box .left .dir{
+    margin:0;
+}
+
+.box .left .agm .tit{
+    margin-right:10px;
+}
+.box .left .agm .tit2{
+    margin-bottom: 30px;
+}
+
+
+.box .right{
+    height: 15vh;
+    display: flex;
+    flex-direction:row;
+}
+.box .icons{
+    margin:10px;
+    padding:10px;
+    transition:0.3s;
+
+}
+.box .icons a{
+    color:#ccc;  
+}
+
+
+
+.icons:hover{
+    font-size:1.1em;
+    transition:0.3s;
+}
+
+@media (max-width:1190px){
+   .box .left .agm {
+       flex-direction: column;
+       margin:0;
+   }
+
+}
+@media (max-width:960px){
+    .box .right{
+        flex-direction: column-reverse;
+    }
+
+    body{
+        background-size:cover;
+        background-position: 0% 30%;
+    }
+}
+@media (max-width:700px){
+    body{
+        background-size:cover;
+        background-position: 40% 30%;
+    }
+}
+
+@media (max-width:560px){
+    body{
+        background-size:cover;
+        background-position: 40% 30%;
+    }
+}
+
+
